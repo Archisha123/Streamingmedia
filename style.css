@@ -52,13 +52,13 @@ nav {
     width: 375px;
 }
 
-#burger, input {
+#hamburger, input {
     grid-column-start: 1;
     grid-column-end: 2;
     z-index: 2;
 }
 
-#burger {
+#hamburger {
     cursor: pointer;
     display: inline-block;
     padding: 28px 20px;
@@ -66,7 +66,7 @@ nav {
     user-select: none;
 }
 
-#burger span {
+#hamburger span {
     background-color: #ffffff;
     display: block;
     height: 2px;
@@ -75,7 +75,7 @@ nav {
     width: 18px;
 }
 
-#burger span:before, #burger span:after {
+#hamburger span:before, #hamburger span:after {
     background: #ffffff;
     content: '';
     display: block;
@@ -85,11 +85,11 @@ nav {
     width: 100%;
 }
 
-#burger span:before {
+#hamburger span:before {
     top: 5px;
 }
 
-#burger span:after {
+#hamburger span:after {
     top: -5px;
 }
 
@@ -101,19 +101,19 @@ input:checked ~ #navMenu {
     max-height: 500px;
 }
 
-input:checked ~ #burger span {
+input:checked ~ #hamburger span {
     background: transparent;
 }
 
-input:checked ~ #burger span:before {
+input:checked ~ #hamburger span:before {
     transform: rotate(-45deg);
 }
 
-input:checked ~ #burger span:after {
+input:checked ~ #hamburger span:after {
     transform: rotate(45deg);
 }
 
-input:checked ~ #burger:not(.steps) span:before, input:checked ~ #burger:not(.steps) span:after {
+input:checked ~ #hamburger:not(.steps) span:before, input:checked ~ #hamburger:not(.steps) span:after {
     top: 0;
 }
 
@@ -396,11 +396,11 @@ footer {
         background-color: #030A8C;
     }
 
-    #burger span, input {
+    #hamburger span, input {
         display: none;
     }
 
-    #burger {
+    #hamburger {
         z-index: 0;
     }
 
